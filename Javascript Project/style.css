@@ -1,0 +1,58 @@
+body{
+    color: rgb(201, 194, 194);
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: rgb(40,40,40);
+    /* background-image: linear-gradient(147deg, #000000 0%, #434343 74%);') */
+}
+
+.bg-shadow{
+
+    box-shadow:inset 0 0 10px #000000;
+}
+.Balance{
+    height: 6vh;
+}
+
+.borderLeft{
+border-left: 1px solid rgb(255, 255, 255);
+font-size: 1rem;
+
+}
+
+.income{
+    color: green;
+}
+
+.expense{
+    color: red;
+}
+
+.alnright{
+    text-align: right;
+   
+}
+
+.textBg{
+    background-color: #44444454;
+    box-shadow:         inset 0 0 10px #000000;
+}
+
+.input{
+  padding: 5px;
+  background: hsl(0, 0%, 20%);
+}
+
+.box {
+    background-color: #44444454;
+
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+}  
+

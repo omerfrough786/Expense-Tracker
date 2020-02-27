@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="bg-shadow col-md-5 mt-5 p-5 rounded">
+                <h3 class="textBg mt-4 rounded mb-4 font-weight-bold d-flex justify-content-center p-3">Expense Tracker</h3>
+                <h5 class=" ">YOUR BALANCE</h5>
+                <h1 class="Balance font-weight-bold" id="Balance"></h1>
+
+                <div class="textBg row m-auto col-12 text-center p-3 mb-4 rounded">
+                    <div class="col-md-6 p-3">
+                        <div class="font-weight-bold" id="income">TOTAL INCOME IN $
+                        <div class="income">
+                            <h5 id="incomeSum"></h5>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="borderLeft col-md-6 p-3 font-weight-bold" id="expense">TOTAL EXPENSE IN $
+                        <div class="expense">
+                            <h5 id="expenseSum"></h5>
+                        </div>
+                    </div>
+                </div>
+
+                        <h3 class="mt-5">Add New Transaction</h3>
+                        
+                        <form>
+                            <div class="form-group">
+                                <label class="font-weight-bold m-0" for="Input1">Description</label>
+                                <input type="text" class="form-control shadow p-1 mb-4 bg-white rounded" id="description" placeholder="Enter Description">
+                            </div>
+                               
+                            <div>
+                                <label class="font-weight-bold m-0" for="Input2">Amount</label>
+                                <input type="number" class="form-control shadow p-3 mb-4 bg-white rounded" id="amount" placeholder="Enter Amount">
+                            </div>
+
+                            <div>
+                                <label class="font-weight-bold m-0" for="Input2">Date</label>
+                                <input type="date" class="form-control shadow p-3 mb-5 bg-white rounded" id="date">
+                            </div>
+                        </form>
+
+               
+
+                     
+                        
+
+                        <div class="row ml-1 btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="row col-form-label col-sm-12 font-weight-bold">Select</label>
+
+                            <label for="inc" class="btn btn-outline-success">
+                              <input type="radio" class="incBtn" id="inc" autocomplete="off">income
+                            </label>
+
+                            <label for="exp" class="btn btn-outline-danger">
+                              <input type="radio" class="expBtn" id="exp" autocomplete="off">expense
+                            </label>
+                          </div>
+                          
+                          <button class="mb-5 col-12 btn btn-dark mt-5" id="button">Add Transaction</button>
+                    </div>
+              </div>
+         </div>
+         <br>
+         
+    
+    <div class="container-fluid">
+        <hr>
+        <h3 class="text-center box p-2">HISTORY</h3>
+        <div class="row ">
+            <div class="col-md-6">
+                <h4 class="text-center text-success">INCOME</h4>
+                <hr>
+                <table class="border-right table table-hover table-dark">
+                    <thead>
+                        <tr>
+
+                            <th>Description</th>
+                            <th class="alnright">Amount</th>
+                            <th class="alnright">Date</th>
+                            <th class="alnright">Remove</th>
+                        </tr>
+                        <tbody id="addIncToList">
+ 
+                        </tbody>
+                    </thead>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <h4 class="text-center text-danger">EXPENSE</h4>
+                <hr>              
+                  <table class="border-left table table-hover table-dark">
+                        <thead>
+                            <tr>
+
+                                <th>Description</th>
+                                <th class="alnright">Amount</th>
+                                <th class="alnright">Date</th>
+                                <th class="alnright">Remove</th>
+                            </tr>
+                            <tbody id="addExpToList">
+                                
+                            </tbody>
+                        </thead>
+                    </table>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
